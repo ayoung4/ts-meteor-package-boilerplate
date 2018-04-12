@@ -1,11 +1,7 @@
-ts-meteor-package-boilerplate
+## ts-meteor-package-boilerplate
 
 Build a meteor package in typescript using barbatus:typescript-compiler
 
-Uses npm dev dependencies for typings
-
-Test using meteortesting:mocha and chai
-
-Install typings and run server tests:
+Test using meteortesting:mocha and chai:
 
 > npm install && npm test
