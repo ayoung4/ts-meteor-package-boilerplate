@@ -1,0 +1,17 @@
+{
+    "name": "ts-meteor-package-boilerplate",
+    "version": "1.0.0",
+    "scripts": {
+        "test": "meteor test-packages ./ --once --driver-package meteortesting:mocha"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ayoung4/ts-meteor-package-boilerplate.git"
+    },
+    "author": "ayoung4",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ayoung4/ts-meteor-package-boilerplate/issues"
+    },
+    "homepage": "https://github.com/ayoung4/ts-meteor-package-boilerplate#readme"
+}
