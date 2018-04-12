@@ -18,12 +18,12 @@ Package.onUse(function (api) {
     api.use('barbatus:typescript-compiler@0.9.12');
     api.use('modules@0.9.2');
     api.imply('barbatus:typescript-runtime@1.0.2');
+    api.addFiles('globals.d.ts');
     api.mainModule('index.ts');
 });
 
 Package.onTest(function (api) {
     api.use('meteortesting:mocha');
-    api.use('practicalmeteor:chai');
     api.use('modules@0.9.2');
     api.use('ayoung4:ts-meteor-package-boilerplate');
     api.mainModule('tests.ts');
