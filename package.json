@@ -2,7 +2,10 @@
     "name": "ts-meteor-package-boilerplate",
     "version": "1.0.0",
     "scripts": {
-        "test": "meteor test-packages ./ --once --driver-package meteortesting:mocha"
+        "pretest": "npm run build",
+        "test": "npm run mocha",
+        "build": "tsc",
+        "mocha": "meteor test-packages ./ --once --driver-package meteortesting:mocha"
     },
     "repository": {
         "type": "git",
@@ -17,6 +20,8 @@
     "devDependencies": {
         "@types/chai": "^4.1.2",
         "@types/mocha": "^5.0.0",
-        "chai": "^4.1.2"
-    }
+        "chai": "^4.1.2",
+        "pre-commit": "^1.2.2"
+    },
+    "precommit": [ "build", "test" ] 
 }
